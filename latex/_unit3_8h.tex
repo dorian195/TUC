@@ -1,0 +1,92 @@
+\hypertarget{_unit3_8h}{}\section{Dokumentacja pliku Unit3.\+h}
+\label{_unit3_8h}\index{Unit3.h@{Unit3.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_unit3_8h_af6bbedb726b9657fbbf642331eceb4f7}{ileznk}} (string l, char znk)
+\item 
+bool \mbox{\hyperlink{_unit3_8h_ae96235e04c49cb5b340371f1287dac37}{testlinidadanych}} (string l)
+\item 
+bool \mbox{\hyperlink{_unit3_8h_a74f95b962fbbf2b7aa7430e0426509f8}{czytaj\+WW}} (string \&l, int \&wart)
+\item 
+int \mbox{\hyperlink{_unit3_8h_a502dc50b3d3e3775a48d3a46e7a9e938}{Fn\+Log}} (string fun, int w1v, int w2v)
+\item 
+string \mbox{\hyperlink{_unit3_8h_add732fd2b55d293ff93bfeb0207bd637}{its}} (int n)
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+\begin{DoxyAuthor}{Autor}
+Dorian Baranski 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Wersja}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Data}
+2019-\/01-\/18 
+\end{DoxyDate}
+
+
+\subsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_unit3_8h_a74f95b962fbbf2b7aa7430e0426509f8}\label{_unit3_8h_a74f95b962fbbf2b7aa7430e0426509f8}} 
+\index{Unit3.h@{Unit3.h}!czytajWW@{czytajWW}}
+\index{czytajWW@{czytajWW}!Unit3.h@{Unit3.h}}
+\subsubsection{\texorpdfstring{czytajWW()}{czytajWW()}}
+{\footnotesize\ttfamily bool czytaj\+WW (\begin{DoxyParamCaption}\item[{string \&}]{l,  }\item[{int \&}]{wart }\end{DoxyParamCaption})}
+
+Opis funkcji\+:
+
+Funkcja usuwa ewentualne spacje wiod�ce. Dokonuje konwersji z lancucha znakow do wartosci calkowitych int.
+
+parametry funkcji\+:
+
+string \&l -\/ referencja do linii l \mbox{\Hypertarget{_unit3_8h_a502dc50b3d3e3775a48d3a46e7a9e938}\label{_unit3_8h_a502dc50b3d3e3775a48d3a46e7a9e938}} 
+\index{Unit3.h@{Unit3.h}!FnLog@{FnLog}}
+\index{FnLog@{FnLog}!Unit3.h@{Unit3.h}}
+\subsubsection{\texorpdfstring{FnLog()}{FnLog()}}
+{\footnotesize\ttfamily int Fn\+Log (\begin{DoxyParamCaption}\item[{string}]{fun,  }\item[{int}]{w1v,  }\item[{int}]{w2v }\end{DoxyParamCaption})}
+
+Opis funkcji\+:
+
+Jest to funkcja logiczna, ktora oblicza wartosci wyjsciowe w zaleznosci od wykorzystywanych bramek. Bramki \char`\"{}\+A\+N\+D\char`\"{}, \char`\"{}\+N\+A\+N\+D\char`\"{}, \char`\"{}\+O\+R\char`\"{}, \char`\"{}\+N\+O\+R\char`\"{}, \char`\"{}\+X\+O\+R\char`\"{}, \char`\"{}\+X\+N\+O\+R\char`\"{} sa dwuwejsciowego, dlatego do obliczenia wartosci wyjsciowej potrzebne sa wartosci wejscia pierwszego i drugiego. Natomiast bramka \char`\"{}\+N\+E\+G\char`\"{} wykorzystuje tylko jedno wejscie, drugie jest bez znaczenia, czyli zostaje pominiete. W przypadku nie rozpoznania bramki, funkcja logiczna przyjmuje wartosc -\/1, czyli wartosc \textquotesingle{}nieistniejaca\textquotesingle{}
+
+parametry funkcji\+:
+
+int w1v -\/ wartosc pierwszego wejscia int w2v -\/ wartosc drugiego wejscia \mbox{\Hypertarget{_unit3_8h_af6bbedb726b9657fbbf642331eceb4f7}\label{_unit3_8h_af6bbedb726b9657fbbf642331eceb4f7}} 
+\index{Unit3.h@{Unit3.h}!ileznk@{ileznk}}
+\index{ileznk@{ileznk}!Unit3.h@{Unit3.h}}
+\subsubsection{\texorpdfstring{ileznk()}{ileznk()}}
+{\footnotesize\ttfamily int ileznk (\begin{DoxyParamCaption}\item[{string}]{l,  }\item[{char}]{znk }\end{DoxyParamCaption})}
+
+Opis funkcji\+:
+
+Ponizsza funkcja sprawdza ilosc znakow w linii.
+
+parametry funkcji\+:
+
+string l -\/ pojedyncza linia char znk -\/ pojedynczy znak \mbox{\Hypertarget{_unit3_8h_add732fd2b55d293ff93bfeb0207bd637}\label{_unit3_8h_add732fd2b55d293ff93bfeb0207bd637}} 
+\index{Unit3.h@{Unit3.h}!its@{its}}
+\index{its@{its}!Unit3.h@{Unit3.h}}
+\subsubsection{\texorpdfstring{its()}{its()}}
+{\footnotesize\ttfamily string its (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+Opis funkcji\+:
+
+Funkcja konwertuje typ integer do typu string
+
+parametry funkcji\+:
+
+string \&l -\/ referencja do linii l \mbox{\Hypertarget{_unit3_8h_ae96235e04c49cb5b340371f1287dac37}\label{_unit3_8h_ae96235e04c49cb5b340371f1287dac37}} 
+\index{Unit3.h@{Unit3.h}!testlinidadanych@{testlinidadanych}}
+\index{testlinidadanych@{testlinidadanych}!Unit3.h@{Unit3.h}}
+\subsubsection{\texorpdfstring{testlinidadanych()}{testlinidadanych()}}
+{\footnotesize\ttfamily bool testlinidadanych (\begin{DoxyParamCaption}\item[{string}]{l }\end{DoxyParamCaption})}
+
+Opis funkcji\+:
+
+Funkcja sprawdza poprawnosc znakow wystepujacych w linii. Dozwolone sa tylko liczby 0-\/9, \+: , znak bialy oraz tabulacja.
+
+parametry funkcji\+:
+
+string l -\/ pojedyncza linia 
